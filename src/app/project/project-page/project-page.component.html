@@ -1,0 +1,18 @@
+<div class="project-page">
+  <navbar></navbar>
+  <app-header
+    [title]="project.content.title"
+    [picture]="project.content.image"
+    [industry]="project.content.industry"
+  ></app-header>
+  <app-body
+    [pictureBody1]="project.content.image_body_1"
+    [pictureBody2]="project.content.image_body_2"
+    [description]="project.content.description.content"
+    [githubLink]="project.content.githubLink"
+    [code]="project.content.code"
+    [priceRange]="project.content.price_range"
+  ></app-body>
+  <app-project-footer></app-project-footer>
+  <app-footer></app-footer>
+</div>

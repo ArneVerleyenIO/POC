@@ -1,0 +1,32 @@
+<div class="filter">
+  <div>
+    <h4>{{ 'home.filter' | translate}}</h4>
+    <ul *ngFor="let obj of industries">
+      <li>
+        <input (change)="checkIndustries(obj.id)" name="{{obj.name}}" type="checkbox" id={{obj.id}}>
+        <p>{{obj.label}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Project type</h4>
+    <ul *ngFor="let obj of projectTypes">
+      <li>
+        <input (change)="checkProjectTypes(obj.id)" name="{{obj.name}}" type="checkbox" id={{obj.id}}>
+        <p>{{obj.label}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Framework</h4>
+    <ul *ngFor="let obj of frameworks">
+      <li>
+        <input (change)="checkFrameworks(obj.id)" name="{{obj.name}}" type="checkbox" id={{obj.id}}>
+        <p>{{obj.label}}</p>
+      </li>
+    </ul>
+  </div>
+
+</div>

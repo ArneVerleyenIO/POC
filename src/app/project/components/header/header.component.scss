@@ -1,0 +1,49 @@
+
+@import '../../../app.component.scss';
+
+.project-header {
+  margin: 0 10vw;
+  color: $color-black;
+  a {
+    margin-top: 28px;
+    font-family: $font-montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-black;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .project-header-container {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-family: $font-montserrat;
+      font-size: 48px;
+      font-weight: 700;
+      max-width: 536px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: $font-roboto;
+      font-size: 14px;
+    }
+    img {
+      max-width: 500px;
+    }
+  }
+}
+
+@media  screen  and (max-width: 900px) {
+  .project-header {
+    .project-header-container {
+      display: block;
+    }
+
+  }
+}

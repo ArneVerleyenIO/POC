@@ -1,0 +1,10 @@
+@import '../../../app.component.scss';
+
+.footer {
+  border-top: solid $color-light-grey 2px;
+  margin: 100px 10vw 0 10vw;
+  padding-bottom: 100px;
+  img {
+    margin-top: 30px;
+  }
+}

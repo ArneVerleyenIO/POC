@@ -1,0 +1,21 @@
+@import '../../../app.component.scss';
+
+.home-header {
+  margin: 120px 10vw 100px 10vw;
+  h1 {
+    font-family: $font-montserrat;
+    font-size: 60px;
+    color: $color-black;
+    font-weight: 700;
+    max-width: 500px;
+  }
+
+  p {
+    margin-top: 30px;
+    font-family: $font-roboto;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-black;
+    max-width: 680px;
+  }
+}

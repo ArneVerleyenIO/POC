@@ -1,0 +1,103 @@
+@import '../../../app.component.scss';
+
+.project-body {
+  background-color: $color-grey-background;
+  margin: 160px 0;
+  padding: 90px 10vw;
+  color: $color-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    font-family: $font-roboto;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 840px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: $font-roboto;
+    font-size: 20px;
+    max-width: 840px;
+    color: $color-grey-p;
+    margin-bottom: 90px;
+  }
+  .body-img-container {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 462px;
+      max-width: 536px;
+      object-fit: cover;
+      box-shadow: 5px 5px 15px $color-dark-grey;
+    }
+
+    #img-1 {
+      margin-right: 10px;
+    }
+    #img-2 {
+      margin-left: 10px;
+    }
+
+  }
+
+  .body-link {
+    margin-top: 100px;
+    pre {
+      margin-bottom: 30px;
+      font-family: $font-roboto;
+      font-size: 20px;
+      max-width: 840px;
+      color: $color-grey-p;
+      margin-bottom: 90px;
+      max-width: 840px;
+    }
+    a {
+      font-family: $font-roboto;
+      font-size: 14px;
+      font-weight: 700;
+      color: $color-blue;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .body-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    h4 {
+      color: $color-black;
+      font-family: $font-roboto;
+    }
+  }
+
+}
+
+@media  screen  and (max-width: 1080px) {
+  .project-body {
+    .body-img-container {
+      display: block;
+      text-align: center;
+      img {
+        padding: 20px 0;
+      }
+      #img-1 {
+        margin-right: 0px;
+      }
+      #img-2 {
+        margin-left: 0px;
+      }
+    }
+
+  }
+}

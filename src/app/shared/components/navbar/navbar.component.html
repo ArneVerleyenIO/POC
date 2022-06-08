@@ -1,0 +1,31 @@
+<div class='navbar'>
+  <a routerLink="/" >
+    <img alt='intracto' src='../../../../assets/images/intracto-logo.svg' />
+  </a>
+
+  <div>
+    <div style="position: relative;" (click)='toggleMenu()' class="menu-controls" >
+      <div>
+        <img alt='profile' src='../../../../assets/icons/material-person-outline.svg' />
+      </div>
+      <img alt="arrow" src='../../../../assets/icons/arrow-dropdown.svg'/>
+    </div>
+    <div *ngIf='displayMenu' class="menu">
+      <img class="menu-arrow" alt='arrow-menu' src="../../../../assets/icons/arrow-menu.svg" >
+      <div>
+        <img src={{profilePicture}} alt='profile picture' >
+        <ul>
+          <li>{{name}}</li>
+          <li>{{surName}}</li>
+        </ul>
+        <button>{{ 'navbar.profile-btn' | translate }}</button>
+      </div>
+      <div routerLink="/settings" class="settings">
+        <p> {{ 'navbar.settings-link' | translate }} </p>
+      </div>
+      <div>
+        <p>{{ 'navbar.logout-btn' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</div>

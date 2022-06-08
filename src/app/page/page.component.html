@@ -1,0 +1,11 @@
+<div>
+    <navbar></navbar>
+    <div *ngIf="!pageNotFound" class="root"> 
+        <div *ngIf="story.content">
+            <ndc-dynamic [ndcDynamicComponent]="components[story.content.component]" [ndcDynamicInputs]="story.content">
+            </ndc-dynamic>
+        </div>
+    </div>
+    <h1 class="root" *ngIf="pageNotFound">404 page not found</h1>
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,43 @@
+<div class="projects-list">
+  <div class="sort-container">
+    <label for="dropdown">{{ 'home.list-sort-by' | translate }}</label>
+    <select (change)="handleSortBy()" [(ngModel)] = "selectedOption" id='sort'>
+      <option value={{option.value}} *ngFor="let option of options">{{option.name}}</option>
+    </select>
+  </div>
+
+  <div class="project-list row">
+
+    <div *ngFor="let project of projects" class="project">
+      <div class="project-image">
+        <img src={{project.acf.picture}} alt='project image' >
+        <div class="framework" >
+          <span>{{project.acf.framework}}</span>
+        </div>
+      </div>
+      <div class="project-type" >{{project.acf.project_type.label}}</div>
+      <div class="industry" >{{project.acf.industry}}</div>
+      <h3> {{project.title.rendered}} </h3>
+      <a [routerLink]="['/project', project.id]" >Bekijk de details  <svg xmlns="http://www.w3.org/2000/svg" width="17.221" height="7.623" viewBox="0 0 17.221 7.623">
+        <g id="Group_23" data-name="Group 23" transform="translate(-321.213 -1080.689)">
+          <g id="Group_21" data-name="Group 21" transform="translate(-1.655 -0.615)">
+            <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(322.868 1082.01)">
+              <path id="Path_3" data-name="Path 3" d="M7.5,18H23.806" transform="translate(-7.5 -14.896)" fill="none" stroke="#5974d1" stroke-linejoin="round" stroke-width="1"/>
+              <path id="Path_4" data-name="Path 4" d="M18,7.5l3.1,3.1-3.1,3.1" transform="translate(-4.384 -7.5)" fill="none" stroke="#5974d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+      </svg></a>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button id='btn-load-more' (click)='loadMore()' ><svg xmlns="http://www.w3.org/2000/svg" width="8.444" height="8.444" viewBox="0 0 8.444 8.444">
+      <g id="Icon_feather-plus" data-name="Icon feather-plus" transform="translate(-7 -7)">
+        <path id="Path_11" data-name="Path 11" d="M18,7.5v7.444" transform="translate(-6.778 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_12" data-name="Path 12" d="M7.5,18h7.444" transform="translate(0 -6.778)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </svg>
+    {{ 'home.list-load-more' | translate }}</button>
+  </div>
+</div>
+

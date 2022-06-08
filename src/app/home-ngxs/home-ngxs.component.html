@@ -1,0 +1,22 @@
+<div class="home-page">
+    <!--
+      <img id="background" src="../../../assets/images/background-0.svg" alt="O">
+    -->
+    <navbar></navbar>
+    <home-header></home-header>
+  
+    <div class="home-page-content">
+      <app-filter
+        (industryId)="receiveIndustryId($event)"
+        (projectTypeId)="receiveProjectTypeId($event)"
+        (frameworkId)="receiveFrameworkId($event)"
+      ></app-filter>
+      <app-projects-list
+        [industryId]="industryId"
+        [projectTypeId]="projectTypeId"
+        [frameworkId]="frameworkId"
+      ></app-projects-list>
+    </div>
+  
+    <app-footer></app-footer>
+  </div>

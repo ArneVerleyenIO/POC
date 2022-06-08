@@ -1,0 +1,44 @@
+@import '../../../../app.component.scss';
+
+.filters {
+  padding: 0;
+  margin: 25px 80px 0 0;
+  width: 160px;
+  h4 {
+    font-family: $font-montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-black;
+  }
+  div {
+    margin-bottom: 35px;
+    ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        margin: 12px 0;
+        align-items: center;
+        input {
+          width: 18px !important;
+          height: 18px !important;
+          margin-right: 15px;
+          cursor: pointer;
+        }
+        input:checked {
+          background-color: $color-blue;
+        }
+        p {
+          margin: 0;
+          font-family: $font-roboto;
+          font-size: 14px;
+          font-weight: 400;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}

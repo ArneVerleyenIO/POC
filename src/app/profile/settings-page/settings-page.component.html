@@ -1,0 +1,31 @@
+<div class="settings-page">
+  <navbar></navbar>
+    <!-- <app-profile-header></app-profile-header> -->
+    <div class="settings-page-body">
+      <div class="settings-item">
+        <div>
+          <h3>Show prices</h3>
+          <p>Show or hide project prices</p>
+        </div>
+        <switch [switchId]='switchPrices' (switchOn)="recieveSwitchValue($event)" ></switch>
+      </div>
+      <div class="settings-item">
+        <div>
+          <h3>Show repo links</h3>
+          <p>Show the link to project git repo's</p>
+        </div>
+         <switch [switchId]='switchRepositories' (switchOn)="recieveSwitchValue($event)" ></switch>
+      </div>
+      <div class="settings-item">
+        <div>
+          <h3>Change language</h3>
+          <p>Change language</p>
+        </div>
+        <switch [switchId]='switchLanguage' (switchOn)="recieveSwitchValue($event)" ></switch>
+      </div>
+      <div class="btn-container">
+        <button (click)="handleSave()" class="btn-save">Save settings</button>
+      </div>
+    </div>
+  <app-footer></app-footer>
+</div>
