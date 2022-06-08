@@ -1,0 +1,35 @@
+{
+  "navbar" : {
+    "profile-btn" : "Mijn profiel",
+    "settings-link" : "Instellingen",
+    "logout-btn" : "Afmelden"
+  },
+  "home" : {
+    "filter" : "Industrie",
+    "header-title-part-1" : "Campus ",
+    "header-title-part-2" : " cases overzicht",
+    "header-paragraph-part-1" : "Op deze pagina vind u een overzicht van alle verschillende cases die in campus  ",
+    "header-paragraph-part-2": " tot stand zijn gekomen.",
+    "list-sort-by": "Sorteer op",
+    "list-load-more": "Bekijk meer"
+  },
+  "profile" : {
+    "profile-header" : "Profiel",
+    "account-header" : "Account instellingen",
+    "show-prices": "Toon prijzen",
+    "show-prices-paragraph": "Verstop of toon de prijscategorieën.",
+    "show-repos": "Toon repositories",
+    "show-repos-paragraph": "Toon of verstop de repositories en source code.",
+    "change-lang": "Verander taal naar Engels",
+    "change-lang-paragraph": "Verander site taal naar Engels.",
+    "save-btn": "opslaan"
+  },
+  "project" : {
+    "about": "Over dit project",
+    "github" : "Bekijk op GitHub ",
+    "price-range" : "Prijscategorie",
+    "back" : "terug naar overzicht",
+    "footer-h2": "Dit was alles voor deze case.",
+    "footer-h3": "Maar kijk gerust verder."
+  }
+}
