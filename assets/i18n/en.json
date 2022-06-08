@@ -1,0 +1,35 @@
+{
+  "navbar" : {
+    "profile-btn" : "My profile",
+    "settings-link" : "Settings",
+    "logout-btn" : "Logout"
+  },
+  "home" : {
+    "filter" : "Industry",
+    "header-title-part-1" : "Campus ",
+    "header-title-part-2" : " cases overview",
+    "header-paragraph-part-1" : "On this page you will find an overview of all the different cases that were created in campus ",
+    "header-paragraph-part-2": ".",
+    "list-sort-by": "Sort by",
+    "list-load-more": "Load more"
+  },
+  "profile" : {
+    "profile-header" : "Profile",
+    "account-header" : "Account settings",
+    "show-prices": "Show Prices",
+    "show-prices-paragraph": "Hide or show the price ranges and source code in the project pages.",
+    "show-repos": "Show Repositories",
+    "show-repos-paragraph": "Hide or show repositories and source code on the project pages.",
+    "change-lang": "Change Language to English",
+    "change-lang-paragraph": "Change site language to English.",
+    "save-btn": "save"
+  },
+  "project" : {
+    "about": "About this project",
+    "github" : "View on GitHub ",
+    "price-range" : "Price category",
+    "back" : "Back to overview",
+    "footer-h2": "That's everything for this case.",
+    "footer-h3": "But feel free to look further."
+  }
+}
